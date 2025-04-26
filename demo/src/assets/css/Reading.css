@@ -1,0 +1,417 @@
+/* Main Container */
+.ielts-reading-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8fafc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+  }
+  
+  /* Headings */
+  .ielts-reading-container h1 {
+    color: #2b6cb0;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e2e8f0;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  
+  .ielts-reading-container h2 {
+    color: #4a5568;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  /* Reading Passage */
+  .reading-passage {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4299e1;
+  }
+  
+  .reading-passage p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #4a5568;
+    line-height: 1.7;
+  }
+  
+  /* Question Groups */
+  .question-group {
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid #4299e1;
+  }
+  
+  .question-group h3 {
+    color: #2b6cb0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #e2e8f0;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .question-group h3::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #4299e1;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  /* Individual Questions */
+  .question-container {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border-radius: 6px;
+    position: relative;
+    transition: all 0.2s ease;
+    border-left: 3px solid #bee3f8;
+  }
+  
+  .question-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .question-number {
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: #4299e1;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(66, 153, 225, 0.3);
+  }
+  
+  /* Question Text */
+  .question p {
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #2d3748;
+    font-size: 16px;
+  }
+  
+  /* Input Fields */
+  input[type="text"] {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin: 5px 0;
+    width: 100%;
+    max-width: 400px;
+    font-size: 15px;
+    transition: all 0.2s;
+    background-color: #f7fafc;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #63b3ed;
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+    background-color: white;
+  }
+  
+  /* Radio Buttons and Options */
+  .options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .options label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    background-color: #f7fafc;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .options label:hover {
+    background-color: #ebf8ff;
+    border-color: #bee3f8;
+  }
+  
+  .options input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #4299e1;
+  }
+  
+  /* Tables for Matching Features */
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  th, td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  th {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    font-weight: 500;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* Select Dropdowns */
+  select {
+    padding: 9px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 15px;
+    width: 100%;
+    transition: all 0.2s;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%234a5568' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    appearance: none;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #63b3ed;
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+  }
+  
+  /* Summary Completion */
+  .summary-text {
+    white-space: pre-wrap;
+    line-height: 2;
+    background-color: #f7fafc;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .summary-text input {
+    padding: 8px 10px;
+    margin: 0 5px;
+    min-width: 150px;
+    display: inline-block;
+    background-color: white;
+  }
+  
+  /* Lists for Matching Headings */
+  .headings-list, .which-paragraph ul {
+    list-style: none;
+    padding: 0;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+  }
+  
+  .heading-item, .which-paragraph li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid #e2e8f0;
+    transition: background-color 0.2s;
+  }
+  
+  .heading-item:last-child, .which-paragraph li:last-child {
+    border-bottom: none;
+  }
+  
+  .heading-item:hover, .which-paragraph li:hover {
+    background-color: #f8fafc;
+  }
+  
+  .heading-item span, .which-paragraph li span {
+    flex: 1;
+    color: #4a5568;
+  }
+  
+  .heading-item select, .which-paragraph li select {
+    min-width: 180px;
+    margin-left: 15px;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(66, 153, 225, 0.3);
+  }
+  
+  .submit-btn:hover {
+    background-color: #3182ce;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(66, 153, 225, 0.3);
+  }
+  
+  .submit-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .ielts-reading-container {
+      padding: 20px;
+    }
+    
+    .question-group {
+      padding: 15px;
+    }
+    
+    .question-container {
+      padding: 15px;
+    }
+    
+    .options {
+      flex-direction: column;
+      gap: 8px;
+    }
+    
+    .heading-item, .which-paragraph li {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    
+    .heading-item select, .which-paragraph li select {
+      margin-left: 0;
+      width: 100%;
+    }
+    
+    .summary-text input {
+      width: 100%;
+      margin: 5px 0;
+    }
+    
+    .submit-btn {
+      width: 100%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .question-group {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+  
+  .question-group:nth-child(1) { animation-delay: 0.1s; }
+  .question-group:nth-child(2) { animation-delay: 0.2s; }
+  .question-group:nth-child(3) { animation-delay: 0.3s; }
+  .question-group:nth-child(4) { animation-delay: 0.4s; }
+  .question-group:nth-child(5) { animation-delay: 0.5s; }
+  .question-group:nth-child(6) { animation-delay: 0.6s; }
+  .question-group:nth-child(7) { animation-delay: 0.7s; }
+  .question-group:nth-child(8) { animation-delay: 0.8s; }
+
+  /* Input Fields - Ensure black text */
+input[type="text"],
+select,
+textarea {
+  color: #000000 !important; /* Force black text */
+}
+
+/* Specifically target input text in summary completion */
+.summary-text input {
+  color: #000000 !important;
+  background-color: white !important;
+}
+
+/* Select dropdown text color */
+select {
+  color: #000000 !important;
+  background-color: white !important;
+}
+
+/* Radio button labels */
+.options label {
+  color: #000000 !important;
+}
+
+/* Table text in matching features */
+table td {
+  color: #000000 !important;
+}
+
+/* Matching headings and which paragraph contains items */
+.heading-item span,
+.which-paragraph li span {
+  color: #000000 !important;
+}
+
+/* Ensure all text in question containers is black */
+.question-container,
+.question-container p {
+  color: #000000 !important;
+}
+
+/* Remove any background colors that might be causing contrast issues */
+input[type="text"],
+select {
+  background-color: white !important;
+  border: 1px solid #cccccc !important;
+}
+
+/* Fix for dark text on dropdown options */
+select option {
+  color: #000000 !important;
+  background-color: white !important;
+}
